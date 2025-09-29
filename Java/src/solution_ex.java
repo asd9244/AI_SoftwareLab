@@ -1,21 +1,20 @@
+import java.util.*;
 
 public class solution_ex {
-    public int solution(int n) {
-        int answer = 0;
-        int a = 1;
-        while(n >= a) {
-            if((n%a) == 0) {
-                answer += a;
-            }
-            a++;
+    public long solution(long n) {
+        StringBuilder reverse = new StringBuilder();
+
+        String str = Long.toString(n);
+        ArrayList<String> strList = new ArrayList<>(Arrays.asList(str.split("")));
+
+        Collections.sort(strList, Collections.reverseOrder());
+
+
+        for (String str2 : strList) {
+            reverse.append(str2);
         }
+        long answer = Long.parseLong(reverse.toString());
+
         return answer;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
-
-
-
