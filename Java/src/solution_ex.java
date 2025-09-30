@@ -15,7 +15,7 @@ public class solution_ex {
         }
         while (ran.size() > 0) {
             int max = 0;
-            // 2. 마지막 배열이 남았을때, if조건문 실행하고 break로 while문 탈출
+            // 2. 마지막 배열이 남았을때, if조건문 실행하고 while문 탈출
             if (ran.size() == 1) {
                 cnvt.add(ran.get(0));
                 break;
@@ -41,6 +41,7 @@ public class solution_ex {
         long answer = Long.parseLong(maxS);
         return answer;
     }
+
 
     static void main() {
         System.out.println(solution(12345));
