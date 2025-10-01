@@ -1,4 +1,4 @@
-package userManager;
+package codeTest;
 
 public class solution010 {
     public StringBuilder solution(String phone_number) {

@@ -1,4 +1,4 @@
-package userManager;
+package codeTest;
 
 import java.text.MessageFormat;
 

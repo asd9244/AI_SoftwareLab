@@ -1,4 +1,4 @@
-package userManager;
+package codeTest;
 
 public class solution004 {
     public long solution(long n) {

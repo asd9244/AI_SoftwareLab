@@ -1,4 +1,4 @@
-package userManager;
+package codeTest;
 
 public class solution005 {
 

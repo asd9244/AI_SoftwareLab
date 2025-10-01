@@ -1,6 +1,4 @@
-package userManager;
-
-import java.util.*;
+package codeTest;
 
 public class solution003 {
 
