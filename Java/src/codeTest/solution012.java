@@ -3,30 +3,33 @@ package codeTest;
 import java.util.*;
 
 public class solution012 {
-    public List<Integer> solution(int[] arr) {
-        List<Integer> answer = new ArrayList<>();
-        List<Integer> answer2 = new ArrayList<>();
+    public int[] solution(int[] arr) {
 
+        // arr배열값 list에 할당
+        List<Integer> list = new ArrayList<>();
         for (int num : arr) {
-            answer.add(num);
+            list.add(num);
         }
 
-       Collections.sort(answer);
-        int a = answer.get(0);
+        // List내 최솟값 반환
+        int min = Collections.min(list);
 
-        for(int num : arr) {
-            answer2.add(num);
+        // 원소가 2개 이상일때 값이 가장 작은 원소를 제거
+        if(list.size() > 1) {
+            list.remove(Integer.valueOf(min));
         }
 
-        if(answer2.size() > 1) {
-            answer2.remove(a);
-
-        } else {
-            answer2.remove(0);
-            answer2.add(-1);
-
+        // answer배열에 list값을 할당
+        int[] answer = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
         }
 
-        return answer2;
+        // 할당받은 값이 1개면, 그 값을 -1로 채움
+        if(answer.length < 2) {
+            Arrays.fill(answer, -1);
+        }
+
+        return answer;
     }
 }
