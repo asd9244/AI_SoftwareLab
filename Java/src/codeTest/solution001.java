@@ -16,7 +16,8 @@ public class solution001 {
         //a[0] = 010
         //a[1] = 1234
         //a[2] = 4567
-        ArrayList<String> strArray = new ArrayList<>(Arrays.asList(str.split("")));
+        ArrayList<String> strArray = new ArrayList<>(Arrays.asList(str.split(
+                "")));
 //        ArrayList<String> strArray = new ArrayList<>(str.split(""));
 
         for (int i = 0; i < strArray.size(); i++) {
